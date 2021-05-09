@@ -1,1 +1,88 @@
-Hello World
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="MVCHN">
+    <title>MVCHN</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <style>
+        .circular-square {
+            border-radius: 50%;
+            margin-right: 10pt;
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="css/starter-template.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="col-lg-8 mx-auto p-3 py-md-5">
+    <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+
+        <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+            <img src="data:image/png;base64,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"
+                 width="64" height="64" class="circular-square" alt="Roma Movchan">
+            <span class="fs-4 ml-3">Roma Movchan</span>
+        </a>
+    </header>
+
+    <main>
+        <h1>Backend Developer / Solution Architect</h1>
+        <p class="fs-5 col-md-8">10+ years of experience in software development. Expert level in PHP, Object-oriented design, Symfony framework. Open to job offers in software development teams.</p>
+        <p class="fs-5 col-md-8">You can download CV file.</p>
+
+        <div class="mb-5">
+            <a href="#" class="btn btn-primary btn-lg px-4">Download CV</a>
+        </div>
+
+        <hr class="col-3 col-md-2 mb-5">
+
+        <div class="row g-5">
+            <div class="col-md-4">
+                <h2>Technical Skills</h2>
+                <p></p>
+                <ul class="icon-list">
+                    <li>Languages: PHP, SQL, JavaScript, Hackel, GoLang</li>
+                    <li>Design: Clean code, SOLID</li>
+                    <li>Tools and frameworks: Symfony</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Tools and platforms</h2>
+                <p></p>
+                <ul class="icon-list">
+                    <li>IntelliJ IDEA (PHPStorm)</li>
+                    <li>Git, GitHub</li>
+                    <li>Docker</li>
+                    <li>Services: RabbitMQ, Redis, Grafana</li>
+                    <li>RDBMS: MySql, PostgreSQL, ClickHouse</li>
+                    <li>OS: Linux, Windows</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Management</h2>
+                <p></p>
+                <ul class="icon-list">
+                    <li>Agile</li>
+                    <li>Kanban</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="pt-5 my-5 text-muted border-top">
+        Created by the mvchn &middot; &copy; 2021
+    </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+</body>
+</html>
